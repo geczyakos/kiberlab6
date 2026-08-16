@@ -1,0 +1,18 @@
+{
+  "name": "cache-toolkit",
+  "version": "0.1.0",
+  "description": "A small, dependency-light in-memory caching library for Node.js.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["cache", "lru", "ttl", "javascript"],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "babel-jest": "^29.0.0"
+  }
+}
