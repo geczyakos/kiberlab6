@@ -9,7 +9,7 @@ export function withTTL(cache, defaultTtlMs = 60000) {
     },
     get(key) {
       const expiresAt = expiries.get(key);
-      if (expiresAt !== undefined && Date.now() > expiresAt) {
+      if (expiresAt !== undefined && Date.now() >= expiresAt) {
         cache.delete(key);
         expiries.delete(key);
         return undefined;
